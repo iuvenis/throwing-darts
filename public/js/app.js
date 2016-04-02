@@ -17,6 +17,16 @@ function scoreThrows(throws) {
     }
   }
 
+  console.log(points);
+  throwSum = points.reduce(function(a, b) {
+  return a + b;
+});
+  if (throwSum > 25) {
+    throwSum += 100;
+  } else {
+    console.log('Sorry Charlie');
+  }
+  console.log(throwSum);
 }
 
 scoreThrows([1, 5, 11]);
