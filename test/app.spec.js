@@ -18,6 +18,6 @@ describe('scoreThrows', function() {
     expect(isNaN(throws)).to.be.false;
   });
   it('Should take input array and return a single value for the score"', function() {
-    expect(throwSum).to.equal(15);
+    expect(throwSum).to.deep.equal(15);
   });
 });
